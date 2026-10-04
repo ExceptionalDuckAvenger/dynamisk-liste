@@ -2,7 +2,7 @@
 // url'en i dette tilfælde en lokal fil
 const productUrl = "cars.json";
 
-const carList = document.querySelector("#car_list");
+const carList = document.querySelector("#product_list");
 getData();
 function getData() {
   fetch(productUrl).then((result) => result.json().then((data) => showData(data)));
